@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#17130B"/>
+      <stop offset="0.55" stop-color="#050505"/>
+      <stop offset="1" stop-color="#201507"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0.12" y1="0" x2="0.88" y2="1">
+      <stop offset="0" stop-color="#FFF7B0"/>
+      <stop offset="0.18" stop-color="#FFE56B"/>
+      <stop offset="0.4" stop-color="#FFB900"/>
+      <stop offset="0.62" stop-color="#FFF18A"/>
+      <stop offset="0.82" stop-color="#D98200"/>
+      <stop offset="1" stop-color="#FFF0A0"/>
+    </linearGradient>
+    <linearGradient id="goldSide" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#8A4800"/>
+      <stop offset="0.45" stop-color="#F7A900"/>
+      <stop offset="1" stop-color="#6E3500"/>
+    </linearGradient>
+    <linearGradient id="play" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFFCC1"/>
+      <stop offset="0.35" stop-color="#FFD52E"/>
+      <stop offset="0.7" stop-color="#F6A500"/>
+      <stop offset="1" stop-color="#A94F00"/>
+    </linearGradient>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="12" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="12"/>
+      <feOffset dy="10"/>
+      <feComponentTransfer><feFuncA type="linear" slope="0.7"/></feComponentTransfer>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="1024" height="1024" rx="210" fill="url(#bg)"/>
+  <rect x="68" y="68" width="888" height="888" rx="220" fill="none" stroke="#C77B08" stroke-width="20" opacity=".28" filter="url(#glow)"/>
+  <rect x="82" y="82" width="860" height="860" rx="205" fill="none" stroke="url(#gold)" stroke-width="13"/>
+  <rect x="98" y="98" width="828" height="828" rx="190" fill="none" stroke="#FFF2A0" stroke-width="2" opacity=".3"/>
+  <path d="M180 665 C260 430 630 255 822 328 C949 376 849 555 671 652 C489 750 260 821 174 748 C128 709 152 654 202 599" fill="none" stroke="url(#goldSide)" stroke-width="62" stroke-linecap="round" opacity=".95"/>
+  <path d="M180 665 C260 430 630 255 822 328 C949 376 849 555 671 652 C489 750 260 821 174 748 C128 709 152 654 202 599" fill="none" stroke="url(#gold)" stroke-width="43" stroke-linecap="round"/>
+  <path d="M385 205 C337 205 300 245 300 296 L300 720 L397 720 L397 365 C397 320 420 298 454 298 L702 298 L636 241 C603 215 572 205 535 205 Z" fill="url(#goldSide)" filter="url(#shadow)"/>
+  <path d="M386 205 C338 205 312 246 312 292 L312 720 L384 720 L384 360 C384 321 410 298 449 298 L684 298 L623 245 C597 220 565 205 529 205 Z" fill="url(#gold)"/>
+  <g fill="#080706">
+    <rect x="329" y="330" width="43" height="54" rx="10" transform="rotate(-8 350 357)"/>
+    <rect x="329" y="413" width="43" height="54" rx="10" transform="rotate(-8 350 440)"/>
+    <rect x="329" y="496" width="43" height="54" rx="10" transform="rotate(-8 350 523)"/>
+    <rect x="329" y="579" width="43" height="54" rx="10" transform="rotate(-8 350 606)"/>
+    <rect x="329" y="662" width="43" height="35" rx="9" transform="rotate(-8 350 679)"/>
+  </g>
+  <path d="M455 375 Q430 360 430 394 L430 674 Q430 706 458 689 L699 548 Q728 531 699 513 Z" fill="#6E3900" opacity=".9" transform="translate(8 10)"/>
+  <path d="M455 375 Q430 360 430 394 L430 674 Q430 706 458 689 L699 548 Q728 531 699 513 Z" fill="url(#play)" stroke="#FFF1A0" stroke-width="7" stroke-linejoin="round" filter="url(#shadow)"/>
+  <path d="M453 393 L453 667 L685 530 Z" fill="none" stroke="#FFF9C9" stroke-width="3" opacity=".45"/>
+  <path d="M170 686 C260 782 493 713 690 598 C815 525 885 447 863 397" fill="none" stroke="#FFF3A0" stroke-width="5" stroke-linecap="round" opacity=".9"/>
+  <g transform="translate(856 334)" filter="url(#glow)">
+    <path d="M0 -24 L5 -5 L24 0 L5 5 L0 24 L-5 5 L-24 0 L-5 -5 Z" fill="#FFF9C6"/>
+    <circle r="5" fill="#FFFFFF"/>
+  </g>
+</svg>
