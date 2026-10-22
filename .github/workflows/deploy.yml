@@ -34,11 +34,6 @@ jobs:
 
       - name: Deploy to Cloudflare Workers
         run: npx opennextjs-cloudflare deploy
-
         env:
-          CLOUDFLARE_API_TOKEN: ${{ "cfat_ZseOTLlH0nyA12YMIMmO8PVNuejQF00p1Fj0iLd2f4ab5045" }}
-          CLOUDFLARE_ACCOUNT_ID: ${{ "5e97277cc7c6948c6506945b9363749b" }}
-
-        env:
-          CLOUDFLARE_API_TOKEN: ${{ "cfat_ZseOTLlH0nyA12YMIMmO8PVNuejQF00p1Fj0iLd2f4ab5045" }}
-          CLOUDFLARE_ACCOUNT_ID: ${{ "5e97277cc7c6948c6506945b9363749b" }}
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
